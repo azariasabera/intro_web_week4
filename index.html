@@ -5,16 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TV-show Viewer</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://getbootstrap.com/docs/5.2/getting-started/download/#cdn-via-jsdelivr">
     <script src="basics.js" defer></script>
 </head>
 <body>
-    <form action="" method="GET">
-        <input type="text" id="input-show" placeholder="input the show">
-    </form>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <form action="" method="GET" class="navbar-brand mb-0 h1">
+                <input type="text" id="input-show" placeholder="Type the show">
+                <input type="submit" value="Search" id="submit-data">
+            </form>
+
+            <!-- <input type="submit" value="Search" id="submit-data"> -->
     
-    <input type="submit" value="Submit" id="submit-data">
-    
-    <div class="show-container"></div>
+            <div class="show-container"></div>
+        </div>
+    </nav>
 
 </body>
 </html>
