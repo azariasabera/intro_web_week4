@@ -27,9 +27,6 @@ function createElements(stringData) {
     let title = ''
     let summary = ''
 
-    let divData = document.createElement('div');
-    divData.classList.add("show-data");
-
     listData.forEach(element => {
         if (element.show.image) {
             imgURL = element.show.image.medium
@@ -41,6 +38,9 @@ function createElements(stringData) {
         title = element.show.name
         summary = element.show.summary
         
+        let divData = document.createElement('div');
+        divData.classList.add("show-data");
+
         let div = document.createElement('div');
         div.classList.add("show-info"); 
         let img = document.createElement('img');
@@ -55,6 +55,6 @@ function createElements(stringData) {
         div.appendChild(p);
         divData.appendChild(img);
         divData.appendChild(div); 
+        divContainer.appendChild(divData);
     });
-    divContainer.appendChild(divData);
 }
