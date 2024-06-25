@@ -2,7 +2,7 @@ const submitButton = document.getElementById('submit-data');
 const divContainer = document.querySelector('.show-container');
 
 submitButton.addEventListener("click", async (event)=>{
-    event.preventDefault()
+    event.preventDefault();
     let inputData = document.getElementById('input-show').value;
     let stringData = await fetchData(inputData);
     //await fetchData(inputData);

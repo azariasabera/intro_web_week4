@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TV-show Viewer</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-    <link rel="stylesheet" href="https://getbootstrap.com/docs/5.2/getting-started/download/#cdn-via-jsdelivr">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <script src="basics.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+            crossorigin="anonymous"></script>
 </head>
 <body>
     <nav class="navbar bg-body-tertiary">
@@ -15,10 +18,8 @@
             <form action="" method="GET" class="navbar-brand mb-0 h1">
                 <input type="text" id="input-show" placeholder="Type the show">
                 <input type="submit" value="Search" id="submit-data">
+                <!--In order to add button inside form, add event.preventDefault() in JS-->
             </form>
-
-            <!-- <input type="submit" value="Search" id="submit-data"> -->
-    
             <div class="show-container"></div>
         </div>
     </nav>
