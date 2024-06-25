@@ -27,6 +27,8 @@ function createElements(stringData) {
     let title = ''
     let summary = ''
 
+    divContainer.innerHTML = ''; // to clear the previous search results
+
     listData.forEach(element => {
         if (element.show.image) {
             imgURL = element.show.image.medium
